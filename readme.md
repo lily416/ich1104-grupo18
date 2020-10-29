@@ -1,6 +1,6 @@
-# Proyecto Fluidos: Cañón de Vótices
-### Grupo 18
+#### Proyecto Semestral: ICH1104 - Mecánica de Fluidos
 
+# Grupo 18: Cañón de Vótices
 
 <!-- Mini descripción del proyecto -->
 
@@ -11,8 +11,9 @@
 | Diego Cartagena   | 16622766 | Sección 4 |
 | Daniela Concha    | 16637585 | Sección 3 |
 
+---
 
-## Herramientas
+## Herramientas y librerías utilizadas
 
 + Librería fullPage.js
 + Libreía p5.js
@@ -20,4 +21,4 @@
 
 ## Creditos 
 
-+ Gif inicial obtenido de [_The Vortex Ring, Close Up, in Slow Motion._](https://www.youtube.com/watch?v=Sj9irzI-Pzw) de Giesbert Nijhuis.
++ Gif vista principal obtenido de [_"The Vortex Ring, Close Up, in Slow Motion"_ de Giesbert Nijhuis](https://www.youtube.com/watch?v=Sj9irzI-Pzw).
