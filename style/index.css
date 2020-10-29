@@ -128,8 +128,7 @@ p {
 
 /* Vista inicial */
 #inicio {
-	background-image: url("https://images.pexels.com/photos/1426718/pexels-photo-1426718.jpeg?cs=srgb&dl=pexels-julie-aagaard-1426718.jpg&fm=jpg");
-	/* background-color: mediumslateblue; */
+	background-image: url("../images/vortex_ring.gif");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
