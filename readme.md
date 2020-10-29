@@ -5,11 +5,10 @@
 <!-- Mini descripción del proyecto -->
 
 
-| Integrantes       |          |           |
-| ----------------- | -------- | --------- |
-| Vicente Campos    | 1663683J | Sección 3 |
-| Diego Cartagena   | 16622766 | Sección 4 |
-| Daniela Concha    | 16637585 | Sección 3 |
+### Integrantes
++ Vicente Campos 
++ Diego Cartagena 
++ Daniela Concha 
 
 ---
 
