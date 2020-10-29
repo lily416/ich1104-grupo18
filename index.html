@@ -1,39 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
-    <link rel="stylesheet" type="text/css" href="./style/index.css" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Cañones de vórtices</title>
+  <link rel="stylesheet" type="text/css" href="./scripts/fullPage/dist/fullpage.min.css" />
+  <link rel="stylesheet" type="text/css" href="./style/index.css" />
+
+  <!--[if IE]>
+    <script type="text/javascript">
+      var console = { log: function() {} };
+    </script>
+  <![endif]-->
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript" src="./scripts/fullPage/dist/fullpage.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+
+      $('#fullpage').fullpage({
+        sectionsColor: ['#000', '#fff', '#fff'],
+        navigation: true,
+        slidesNavigation: true,
+      });
+
+      $('#moveSectionUp').click(function(e){
+        e.preventDefault();
+        $.fn.fullpage.moveSectionUp();
+      });
+
+      $('#moveSectionDown').click(function(e){
+        e.preventDefault();
+        $.fn.fullpage.moveSectionDown();
+      });
+
+      $('#scroll').click(function(e){
+        e.preventDefault();
+        $.fn.fullpage.moveSectionDown();
+      });
+
+      
+      $('.fp-slidesNav .fp-bottom').click(function(e){
+        console.log('da')
+      });
+    });
+  </script>
 </head>
 <body>
-  
-  <div>
-    <div>
+
+<div id="fullpage">
+  <div class="section" id="inicio">
+    <div id="title">
       <h1>Cañones de vórtices</h1>
     </div>
+    <img id="scroll" src="./images/scroll.svg" />
   </div>
-  <div>
+  <div class="section">
     <h2>¿Qué son los cañones de vórtices?</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ultrices lectus sed tortor consectetur aliquet. Ut vulputate viverra libero, in malesuada leo vehicula ac. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque ac elit at urna mattis interdum at eget massa. Aliquam finibus aliquet imperdiet. Vivamus in ex in nulla finibus dictum. Maecenas sit amet rhoncus nisi. Vivamus laoreet ex eget est rhoncus, eget efficitur nisi lobortis. Donec dapibus ultrices erat non volutpat. Curabitur cursus tincidunt elit nec eleifend. Nullam dolor risus, pharetra a risus at, sollicitudin euismod velit. Quisque lobortis hendrerit tellus eget pellentesque. Integer aliquam diam in est malesuada, ac consectetur arcu porttitor.</p>
     <p>Mauris ac porta nisl. Aliquam a iaculis augue. Cras massa enim, sollicitudin eget odio ac, consequat lacinia turpis. Phasellus semper dolor sit amet turpis congue dapibus. In rhoncus urna vel libero feugiat, nec pellentesque mauris feugiat. Ut consectetur lacinia risus, sed suscipit ipsum pharetra ac. Donec vehicula lacinia elit, eu iaculis lacus hendrerit sit amet. Duis in velit eu leo rutrum iaculis vitae eu metus. Vestibulum vehicula pretium fermentum. Vivamus sit amet velit mauris. Morbi odio nulla, porta id scelerisque quis, dignissim vel orci. Maecenas lacinia purus in ante pharetra, vel rutrum mauris venenatis. Cras consectetur magna sed tempor vulputate. Morbi eros sem, lobortis eu rhoncus sed, efficitur condimentum ante.</p>
   </div>
-  <div>
-    <div>
+  <div class="section">
+    <div class="slide">
       <h2>Simula tu propio cañón de vórtices</h2>
     </div>
-    <div>
+    <div class="slide">
       <h2>Instrucciones de uso</h2>
       <p>Etiam a ligula at libero scelerisque fermentum vel vel tortor. Proin ac lacus magna. Vivamus sed urna id ipsum semper tempus. Donec scelerisque, purus in luctus eleifend, neque arcu imperdiet nunc, vitae varius lectus ipsum sed nisi. Fusce vitae dignissim nunc. Fusce tempor velit tellus, a pharetra sapien ullamcorper placerat. Praesent eleifend metus sed auctor rutrum. Nulla finibus ex sem, nec porta est luctus nec. Fusce convallis libero varius, ullamcorper leo imperdiet, egestas nulla. Vestibulum vehicula facilisis ligula, porttitor feugiat elit laoreet vitae. In aliquet bibendum diam sed facilisis. Suspendisse ex dui, vulputate id dui eu, hendrerit porttitor lorem. Vivamus fermentum, risus finibus sodales auctor, nisi justo rhoncus turpis, in faucibus odio est id nisi.</p>
     </div>
-    <div>
+    <div class="slide">
       <h2>.</h2>
-      <div>
+      <div id="vortex">
+        <iframe src="src/vortex.html"></iframe>
       </div>
     </div>
   </div>
-    
+</div>
+
+
 </body>
 </html>
-
