@@ -1,14 +1,13 @@
 let 
-  render,     // Canvas
-  detailR1,   // Radio interno del toroide
-  detailR2,   // Radio del tubo del anillo
-  div1,       // Texto R1
-  div2,       // Texto R2
-  btn1,       // Botón inicio
-  btn2;       // Botón reinicio
+  render,           // Canvas
+  div1, detailR1,   // Radio interno del toroide
+  div2, detailR2,   // Radio del tubo del anillo
+  divV, detailV,    // Velocidad de movimiento
+  btnS,             // Botón inicio
+  btnR;             // Botón reinicio
 
-let x = 0,
-    v = 0;
+let x = 0,          // Posición del toroide en x
+    start = false;  // Simulación iniciada
 
 
 function setup() {
@@ -31,27 +30,34 @@ function setup() {
   detailR2 = createSlider(10, 30, 30);  
   detailR2.parent('sliders');  
 
-  btn1 = createButton('Iniciar simulación');
-  btn1.parent('sliders');
-  btn1.mousePressed(startSimulation);
+  divV = createDiv('Velocidad');
+  divV.class('p');
+  divV.style('color', 'black');
+  divV.parent('sliders');  
+
+  detailV = createSlider(0, 15, 1.5);  
+  detailV.parent('sliders');  
+
+  btnS = createButton('Iniciar simulación');
+  btnS.parent('sliders');
+  btnS.mousePressed(startSimulation);
   
-  btn2 = createButton('Reiniciar simulación');
-  btn2.parent('sliders');
-  btn2.mousePressed(resetSimulation);
+  btnR = createButton('Reiniciar simulación');
+  btnR.parent('sliders');
+  btnR.mousePressed(resetSimulation);
 
 }
 
 function draw() {
   background(205, 102, 94);
   
-  if (v === 0) { 
-    rotateY(millis() / 1000);
-  } else {
+  if (start) {
+    x += detailV.value();
+    translate(x, 0, 0);
     rotateY(PI / 2.0);
+  } else {
+    rotateY(millis() / 1000);
   }
-
-  x += v;
-  translate(0, 0, x);
 
   torus(detailR1.value(), detailR2.value());
 }
@@ -62,10 +68,10 @@ function windowResized() {
 
 function startSimulation() {
   x = - width / 2;
-  v = 1.5;
+  start = true;
 }
 
 function resetSimulation() {
   x = 0;
-  v = 0;
+  start = false;
 }
