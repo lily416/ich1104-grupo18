@@ -5,7 +5,9 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Cañones de vórtices</title>
   <link rel="stylesheet" type="text/css" href="./scripts/fullPage/dist/fullpage.min.css" />
+  <link rel="stylesheet" type="text/css" href="./style/style.css" />
   <link rel="stylesheet" type="text/css" href="./style/index.css" />
+  <link rel="stylesheet" type="text/css" href="./style/votex.css" />
 
   <!--[if IE]>
     <script type="text/javascript">
@@ -15,6 +17,9 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script type="text/javascript" src="./scripts/fullPage/dist/fullpage.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
+  <script src="../scripts/vortex.js"></script>
 
   <script type="text/javascript">
     $(document).ready(function(){
@@ -62,7 +67,7 @@
     <p>Mauris ac porta nisl. Aliquam a iaculis augue. Cras massa enim, sollicitudin eget odio ac, consequat lacinia turpis. Phasellus semper dolor sit amet turpis congue dapibus. In rhoncus urna vel libero feugiat, nec pellentesque mauris feugiat. Ut consectetur lacinia risus, sed suscipit ipsum pharetra ac. Donec vehicula lacinia elit, eu iaculis lacus hendrerit sit amet. Duis in velit eu leo rutrum iaculis vitae eu metus. Vestibulum vehicula pretium fermentum. Vivamus sit amet velit mauris. Morbi odio nulla, porta id scelerisque quis, dignissim vel orci. Maecenas lacinia purus in ante pharetra, vel rutrum mauris venenatis. Cras consectetur magna sed tempor vulputate. Morbi eros sem, lobortis eu rhoncus sed, efficitur condimentum ante.</p>
   </div>
   <div class="section">
-    <div class="slide">
+    <div class="slide" id="simulation">
       <h2>Simula tu propio cañón de vórtices</h2>
     </div>
     <div class="slide">
@@ -70,10 +75,9 @@
       <p>Etiam a ligula at libero scelerisque fermentum vel vel tortor. Proin ac lacus magna. Vivamus sed urna id ipsum semper tempus. Donec scelerisque, purus in luctus eleifend, neque arcu imperdiet nunc, vitae varius lectus ipsum sed nisi. Fusce vitae dignissim nunc. Fusce tempor velit tellus, a pharetra sapien ullamcorper placerat. Praesent eleifend metus sed auctor rutrum. Nulla finibus ex sem, nec porta est luctus nec. Fusce convallis libero varius, ullamcorper leo imperdiet, egestas nulla. Vestibulum vehicula facilisis ligula, porttitor feugiat elit laoreet vitae. In aliquet bibendum diam sed facilisis. Suspendisse ex dui, vulputate id dui eu, hendrerit porttitor lorem. Vivamus fermentum, risus finibus sodales auctor, nisi justo rhoncus turpis, in faucibus odio est id nisi.</p>
     </div>
     <div class="slide">
-      <h2>.</h2>
-      <div id="vortex">
-        <iframe src="src/vortex.html"></iframe>
-      </div>
+      <div id="empty-h2"></div>
+      <div id="vortex"></div>
+      <div id="sliders"></div>
     </div>
   </div>
 </div>

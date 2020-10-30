@@ -21,3 +21,5 @@
 ## Creditos 
 
 + Gif vista principal obtenido de [_"The Vortex Ring, Close Up, in Slow Motion"_ de Giesbert Nijhuis](https://www.youtube.com/watch?v=Sj9irzI-Pzw).
+
++ Imagen vista simulación obtenida de [_"Two Vortex Rings Colliding in SLOW MOTION - Smarter Every Day 195"_ de SmarterEveryDay](https://youtu.be/EVbdbVhzcM4)

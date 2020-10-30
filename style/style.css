@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@CHARSET "ISO-8859-1";
+
+
+/* Elementos generales del scroll */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a {
+	text-decoration:none;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong {
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+}
+h1,h2,h3,h4,h5,h6,span {
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	text-transform: uppercase;
+}
+/* ::selection {
+	background-color: inherit;
+} */
+q:before,q:after {
+    content:'';
+}
+abbr,acronym {
+	border: 0;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #ffffff;
+}
+h1 {
+	font-size: 5em;
+  	text-align:center;
+}
+h2 {
+	background-color: black;
+	font-size: 4em;
+	text-align:center;
+	margin-top: 80px;
+}
+h3 {
+	background-color: black;
+	font-size: 4em;
+	text-align:center;
+  	margin-top: 30px;
+}
+h4 {
+	color: black;
+	font-size: 3em;
+	text-transform: uppercase;
+	text-align:center;
+  	margin-bottom: 130px;
+}
+h5 {
+	font-size: 4em;
+	text-align:center;
+}
+h6 {
+	font-size: 2em;
+	text-align:center;
+}
+p {
+	color: black;
+	font-size: 1.5em;
+	text-align: left;
+	margin: 40px 80px;
+}
+.section {
+	text-align:center;
+}
+
+/* Estilo de las flechas */
+.fp-controlArrow.fp-prev {
+	left: 0;
+	top: calc(50% + 20px);
+    border: none;
+	width: 62.82px;
+	height: 32.81px;
+    background: url(../images/scrollMini.svg) no-repeat;
+	cursor: pointer;
+	transform: rotate(90deg);
+	filter: invert(1);
+}
+.fp-controlArrow.fp-next {
+    right: 30px;
+	top: calc(50% + 20px);
+    border: none;
+	width: 62.82px;
+	height: 32.81px;
+    background: url(../images/scrollMini.svg) no-repeat;
+	cursor: pointer;
+	transform: rotate(-90deg);
+	filter: invert(1);
+}
+
+/* Display página */
+.fp-tableCell {
+    vertical-align: inherit;
+}
+
+/* Pintar el punto activo */
+/* #fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span {
+	background-color: blue;
+} */
