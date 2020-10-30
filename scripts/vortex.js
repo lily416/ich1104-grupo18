@@ -18,7 +18,7 @@ function setup() {
   div1 = createDiv('Parámetro 1');
   div1.class('p');
   div1.style('color', 'black');
-  div1.parent('sliders')
+  div1.parent('sliders');
 
   detailR1 = createSlider(60, 100, 100);
   detailR1.parent('sliders');  
@@ -33,11 +33,11 @@ function setup() {
 
   btn1 = createButton('Iniciar simulación');
   btn1.parent('sliders');
-  btn1.mousePressed(startSimulation)
+  btn1.mousePressed(startSimulation);
   
   btn2 = createButton('Reiniciar simulación');
   btn2.parent('sliders');
-  btn2.mousePressed(resetSimulation)
+  btn2.mousePressed(resetSimulation);
 
 }
 
@@ -46,9 +46,9 @@ function draw() {
   
   if (v === 0) { 
     rotateY(millis() / 1000);
-   } else {
+  } else {
     rotateY(PI / 2.0);
-   };
+  }
 
   x += v;
   translate(0, 0, x);
@@ -62,7 +62,7 @@ function windowResized() {
 
 function startSimulation() {
   x = - width / 2;
-  v = 0.8;
+  v = 1.5;
 }
 
 function resetSimulation() {
