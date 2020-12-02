@@ -9,7 +9,6 @@ let
 let x = 0,          // Posición del toroide en x
     start = false;  // Simulación iniciada
 
-
 function setup() {
   render = createCanvas(windowWidth, 300, WEBGL);
   render.parent("vortex");
@@ -45,7 +44,6 @@ function setup() {
   btnR = createButton('Reiniciar simulación');
   btnR.parent('sliders');
   btnR.mousePressed(resetSimulation);
-
 }
 
 function draw() {
@@ -55,6 +53,11 @@ function draw() {
     x += detailV.value();
     translate(x, 0, 0);
     rotateY(PI / 2.0);
+
+    if (x > windowWidth) {
+      x = - width / 2 -10;
+    }
+
   } else {
     rotateY(millis() / 1000);
   }
@@ -67,7 +70,7 @@ function windowResized() {
 }
 
 function startSimulation() {
-  x = - width / 2;
+  x = - width / 2 - 10;
   start = true;
 }
 
