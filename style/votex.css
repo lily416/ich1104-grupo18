@@ -14,6 +14,13 @@
 
 #sliders {
 	display: grid;
+	grid-template-columns: auto auto auto;
+	width: 500px;
+    margin: auto;
+}
+
+#buttons {
+	display: grid;
 	grid-template-columns: auto auto;
 	width: 500px;
     margin: auto;
