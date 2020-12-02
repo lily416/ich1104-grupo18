@@ -17,6 +17,8 @@
 + Librería fullPage.js
 + Libreía p5.js
 + Librería jQuerry
++ Librería MargJax
++ Librería Polyfill
 
 ## Creditos 
 
