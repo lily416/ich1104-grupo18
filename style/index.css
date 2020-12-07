@@ -35,3 +35,7 @@
 	margin-left: 5px;
 	margin-right: 10px;
 }
+
+.reference a, .reference a:link, .reference a:visited, .reference a:hover, .reference a:active {
+	color: white
+}
