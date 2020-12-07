@@ -87,6 +87,20 @@ p {
 	text-align: left;
 	margin: 40px 80px;
 }
+#parameters li {
+	color: black;
+	text-align: left;
+	margin-left: 100px;
+	font-size: 1.5em;
+}
+#parameters li::before {
+	content: "\2022";
+	font-weight: bold;
+	display: inline-block;
+	width: 1em;
+	margin-left: -1em;
+}
+
 .section {
 	text-align:center;
 }

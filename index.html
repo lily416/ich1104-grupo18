@@ -47,11 +47,6 @@
         e.preventDefault();
         $.fn.fullpage.moveSectionDown();
       });
-
-      
-      // $('.fp-slidesNav .fp-bottom').click(function(e){
-      //   console.log('da')
-      // });
     });
   </script>
 </head>
@@ -67,8 +62,6 @@
   <div class="section">
     <h2>¿Qué son los cañones de vórtices?</h2>
     <p>Los vórtices son fenómenos que se encuentran presentes a nuestro alrededor y permiten explicar diversos sucesos del mundo exterior: huracanes, remolinos, anticiclones, ciclones, tornados e incluso el sistema solar. Si nos centramos específicamente en los anillos de vórtices, podremos notar que estos se encuentran presentes en eventos tan cotidianos como el volar de una semilla de diente de león, los helicópteros, e incluso, el latir del corazón.</p>
-    <p>Mauris ac porta nisl. Aliquam a iaculis augue. Cras massa enim, sollicitudin eget odio ac, consequat lacinia turpis. \[ v = \frac{\kappa}{2\pi r} \] </p>
-    
   </div>
   <div class="section">
     <div class="slide" id="simulation">
@@ -76,7 +69,13 @@
     </div>
     <div class="slide">
       <h2>Instrucciones de uso</h2>
-      <p>Etiam a ligula at libero scelerisque fermentum vel vel tortor. Proin ac lacus magna. Vivamus sed urna id ipsum semper tempus. Donec scelerisque, purus in luctus eleifend, neque arcu imperdiet nunc, vitae varius lectus ipsum sed nisi. Fusce vitae dignissim nunc. Fusce tempor velit tellus, a pharetra sapien ullamcorper placerat. Praesent eleifend metus sed auctor rutrum. Nulla finibus ex sem, nec porta est luctus nec. Fusce convallis libero varius, ullamcorper leo imperdiet, egestas nulla. Vestibulum vehicula facilisis ligula, porttitor feugiat elit laoreet vitae. In aliquet bibendum diam sed facilisis. Suspendisse ex dui, vulputate id dui eu, hendrerit porttitor lorem. Vivamus fermentum, risus finibus sodales auctor, nisi justo rhoncus turpis, in faucibus odio est id nisi.</p>
+      <p>Para utilizar el cañón de vórtices deberás utilizar las barras deslizantes para así ajustar los parámetros inicial del vórtice que se generará a partir del cañón. Estos parámetros consisten en:</p>
+      <ul id="parameters">
+        <li>Radio del vórtice \((r)\)</li>
+        <li>Circulación del vórtice \((\kappa)\)</li>
+      </ul> 
+      <p>A partir de estos parámetros, se calculará uno nuevo, la velocidad \((v)\), la cual se obtiene a partir de la siguiente fórmula: \[ v = \frac{\kappa}{2\pi r} \]</p>
+      <p>Una vez definidos los parámetros, solo debes apretar “Iniciar simulación” para empezar la simulación y “Parar simulación” para detenerla.</p>
     </div>
     <div class="slide">
       <div id="empty-h2"></div>

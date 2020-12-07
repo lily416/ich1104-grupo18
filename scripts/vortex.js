@@ -79,13 +79,13 @@ function draw() {
   v = k / (2 * Math.PI * R)
 
   valR = document.querySelector('#valR');
-  valR.textContent = "R: " + R;
+  valR.textContent = "𝑟: " + R;
   
   valK = document.querySelector('#valK');
-  valK.textContent = "k: " + k;
+  valK.textContent = "𝜅: " + k;
   
   valV = document.querySelector('#valV');
-  valV.textContent = "V: " + v.toFixed(2);
+  valV.textContent = "𝑣: " + v.toFixed(2);
   
   if (start) {
     x += v;
