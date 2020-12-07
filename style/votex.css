@@ -17,6 +17,7 @@
 	grid-template-columns: auto auto auto;
 	width: 500px;
     margin: auto;
+    text-align: left;
 }
 
 #buttons {
