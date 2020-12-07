@@ -19,3 +19,19 @@
     align-items: center;
     height: 100%;
 }
+
+.reference {
+	text-align: right;
+	opacity: 0.8;
+}
+
+.reference img {
+	width: 10px;
+}
+
+.reference span {
+	text-transform: none;
+	font-size: 10px;
+	margin-left: 5px;
+	margin-right: 10px;
+}
