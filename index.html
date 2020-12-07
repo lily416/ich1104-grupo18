@@ -44,10 +44,11 @@
         $.fn.fullpage.moveSectionDown();
       });
 
-      $('#scroll').click(function(e){
-        e.preventDefault();
-        $.fn.fullpage.moveSectionDown();
-      });
+      // $('#scroll').click(function(e){
+      //   e.preventDefault();
+      //   $.fn.fullpage.moveSectionDown();
+      // });
+
     });
   </script>
 </head>
@@ -56,13 +57,29 @@
 <div id="fullpage">
   <div class="section" id="inicio">
     <div id="title">
-      <h1>Cañones de vórtices</h1>
+      <h1>Vórtices y<br> cañones de vórtices</h1>
     </div>
     <img id="scroll" src="./images/scroll.svg" />
   </div>
   <div class="section">
-    <h2>¿Qué son los cañones de vórtices?</h2>
-    <p>Los vórtices son fenómenos que se encuentran presentes a nuestro alrededor y permiten explicar diversos sucesos del mundo exterior: huracanes, remolinos, anticiclones, ciclones, tornados e incluso el sistema solar. Si nos centramos específicamente en los anillos de vórtices, podremos notar que estos se encuentran presentes en eventos tan cotidianos como el volar de una semilla de diente de león, los helicópteros, e incluso, el latir del corazón.</p>
+    <h3>¿Qué son los vórtices?</h3>
+    <div class="slide">
+      <p>Los vórtices son fenómenos que se encuentran presentes a nuestro alrededor y permiten explicar diversos sucesos del mundo exterior: huracanes, remolinos, anticiclones, ciclones, tornados e incluso el sistema solar. Si nos centramos específicamente en los anillos de vórtices, podremos notar que estos se encuentran presentes en eventos tan cotidianos como el volar de una semilla de diente de león, los helicópteros, e incluso, el latir del corazón.</p>
+      <p>Matemáticamente los cañones de vórtice presentan similitudes con los campos magnéticos, por lo tanto, una aproximación que permite conocer la velocidad de las líneas de vórtices  se obtiene mediante una reformulación de la ley de Ampere. Realizando una integral de línea alrededor de una recta infinitamente larga que representa la línea de vórtice, obteniéndose la siguiente expresión matemática: \[ v = \frac{\kappa}{2\pi r} \]</p>
+    </div>
+    <div class="slide">
+      <p>Sin embargo, a diferencia del magnetismo, los campos de velocidades creados por el vórtice pueden afectar el comportamiento de este, generando así turbulencias. </p>
+      <p>Finalmente, para poder calcular la velocidad del anillo de humo generado por el cañón de vórtices se utiliza la siguiente aproximación. Se consideran dos líneas de vórtices paralelas separadas a una distancia \(d\) con sentido contrario. Cada campo de velocidad actúa sobre la línea de vórtice contraria, generando que ambas líneas se muevan en conjunto en la misma dirección con una velocidad: \[ v = \frac{\kappa}{d\pi } \]</p>
+    </div>
+    <div class="slide">
+      <h4>Más información</h4>
+      <p>El estudio de la vorticidad no es tan reciente. En 1858 fue descrita  la naturaleza de las líneas de vórtices por el físico alemán Hermann von Helmholtz.</p>
+    </div>
+  </div>
+  <div class="section">
+    <h2>Cañones de vórtices</h2>
+    <p>Para demostrar el comportamiento de un anillo de vórtice se utilizan los cañones de vórtices, debido a la simpleza de su construcción y funcionamiento y el bajo costo de fabricarlo.</p>
+    <p>A continuación, te encontrarás con la simulación de un cañón de vórtices el cual te permitirá generar y visualizar distintos vórtices.</p>
   </div>
   <div class="section">
     <div class="slide" id="simulation">
