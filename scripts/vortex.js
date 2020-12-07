@@ -64,7 +64,7 @@ function setup() {
   btnS.parent('buttons');
   btnS.mousePressed(startSimulation);
   
-  btnR = createButton('Reiniciar simulación');
+  btnR = createButton('Parar simulación');
   btnR.parent('buttons');
   btnR.mousePressed(resetSimulation);
 }
