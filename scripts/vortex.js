@@ -23,6 +23,7 @@ function setup() {
   valR = createDiv('100');
   valR.class('p');
   valR.style('color', 'black');
+  valR.style('text-align', 'left');
   valR.parent('sliders');
   valR.id('valR');
 
@@ -39,10 +40,11 @@ function setup() {
   valK = createDiv('5000');
   valK.class('p');
   valK.style('color', 'black');
+  valK.style('text-align', 'left');
   valK.parent('sliders');
   valK.id('valK');
 
-  detailK = createSlider(1000, 9999, 5000);  
+  detailK = createSlider(1000, 10000, 5000);  
   detailK.parent('sliders');
 
   // ----------------------------------------------------------------
@@ -55,6 +57,7 @@ function setup() {
   valV = createDiv('V: 0');
   valV.class('p');
   valV.style('color', 'black');
+  valV.style('text-align', 'left');
   valV.parent('sliders');
   valV.id('valV')
 
